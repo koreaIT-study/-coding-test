@@ -49,7 +49,7 @@ ex> 예시
 - 매주  `목요일 21:00 ~ 22:00`  
 - 장소 ZOOM
  
- 문제 풀이 사이트 : https://github.com/koreaIT-study/baekjun/blob/main/README.md  
+ 문제 풀이 사이트 : https://patiencelee.tistory.com/1072    
  
 |회차|내용|날짜|
 | :---: | :---: | :---: |
