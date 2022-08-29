@@ -61,6 +61,39 @@ Method Area에 로드된 클래스만 생성 가능.
  * 각 Thread는 자신만의 stack을 가짐
     * 스레드 하나가 새롭게 생성되는 순간 해당 스레드를 위한 stack도 함께 생성되며, 각 스레드에서 다른 스레드의 stack영역에는 접근 불가.
 
+## 메모리 예제
+``` java
+ public class MemoryExam{
+
+public static void main(String[] args) {
+int sum, multi; 
+int x, y;
+x = Integer.parseInt(args[0]);
+y = Integer.parseInt(args[1]); // 1번
+MemoryTest obj1 = new MemoryTest();
+MemoryTest obj2 = new MemoryTest(); // 2번
+sum = obj1.add(x, y);
+multi = obj2.multi(x, y);
+System.out.println("add = " + sum);
+System.out.println("multipy = " + multi);
+}
+}
+
+class MemoryTest{
+int sumret, multiret; 
+public int add(int a, int b) {
+this.addret = a + b; 
+return addret;
+}
+public int multi(int a, int b) {
+this.multiret = a * b; 
+return multiret;
+}
+}
+```  
+![image](https://user-images.githubusercontent.com/67637716/187244905-8d9d50a5-bd37-406e-9358-1cfb60305142.png)  
+
+
  
  ## PC register (Thread별로 1개씩 존재)
  프로그램 카운터(Program counter, PC)는 다른 말로는 "명령어 주소 레지스터"라고도 하는데, 다음 번에 수행될 명령어의 주소를 가지고 있는 레지스터이다.   
@@ -81,4 +114,7 @@ Method Area에 로드된 클래스만 생성 가능.
 ※ 네이티브 코드 : 메모리가 관리 되지 않는 코드(ex) C언어는 gc가 없음, free명령으로 직접 관리)
    os에 의해 직접적으로 컴파일 되는 코드  
 ※ managed code : 인터프리터라고 불리우는 다른 프로그램이 반드시 요구 되는 코드, gc가 있음
+
+Native Method Libraries와 연동하여 실행에 필요한 Native Library(C, C++)를 제공하는 인터페이스.  
+JVM이 C/C++ 라이브러리를 호출하고 하드웨어에 특정한 C/C++ 라이브러리에 의해 호출될 수 있도록 한다.  
 
