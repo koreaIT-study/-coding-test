@@ -13,7 +13,7 @@ Rumtime Data Area는 다섯가지로 구분.
  
  ## Method Area
  ![image](https://user-images.githubusercontent.com/67637716/187226837-2a06f65b-23cf-4dd3-a251-c6db2e2300dd.png)  
- 프로그램 실행 중 클래스나 인터페이스를 사용하게 되면, JVM은 Class Loader를 이용해 클래스와 인터페이스의 메타 데이터를 Method Area에 저장한다.  
+ 클래스 로더가 .class 파일을 읽고, 내용에 맞는 binary데이터를 생성한 뒤, 메모리의 Method영역에 저장(MetaSpace)  
  클래스가 로드 되는 시점은 해당 클래스가 사용되기 위해 호출되는 시점.  
  JVM이 종료될때까지 유지.  
  
