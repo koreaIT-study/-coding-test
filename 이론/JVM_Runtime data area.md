@@ -62,38 +62,7 @@ Method Area에 로드된 클래스만 생성 가능.
     * 스레드 하나가 새롭게 생성되는 순간 해당 스레드를 위한 stack도 함께 생성되며, 각 스레드에서 다른 스레드의 stack영역에는 접근 불가.
 
 ## 메모리 예제
-``` java
- public class MemoryExam{
-
-public static void main(String[] args) {
-int sum, multi; 
-int x, y;
-x = Integer.parseInt(args[0]);
-y = Integer.parseInt(args[1]); // 1번
-MemoryTest obj1 = new MemoryTest();
-MemoryTest obj2 = new MemoryTest(); // 2번
-sum = obj1.add(x, y);
-multi = obj2.multi(x, y);
-System.out.println("add = " + sum);
-System.out.println("multipy = " + multi);
-}
-}
-
-class MemoryTest{
-int sumret, multiret; 
-public int add(int a, int b) {
-this.addret = a + b; 
-return addret;
-}
-public int multi(int a, int b) {
-this.multiret = a * b; 
-return multiret;
-}
-}
-```  
-![image](https://user-images.githubusercontent.com/67637716/187244905-8d9d50a5-bd37-406e-9358-1cfb60305142.png)  
-
-
+https://inspirit941.tistory.com/294  
  
  ## PC register (Thread별로 1개씩 존재)
  프로그램 카운터(Program counter, PC)는 다른 말로는 "명령어 주소 레지스터"라고도 하는데, 다음 번에 수행될 명령어의 주소를 가지고 있는 레지스터이다.   
@@ -117,4 +86,4 @@ return multiret;
 
 Native Method Libraries와 연동하여 실행에 필요한 Native Library(C, C++)를 제공하는 인터페이스.  
 JVM이 C/C++ 라이브러리를 호출하고 하드웨어에 특정한 C/C++ 라이브러리에 의해 호출될 수 있도록 한다.  
-
+일반적인 메서드를 실행하는 경우 JVM 스택에 쌓이다가 해당 메서드 내부에 네이티브 방식을 사용하는 메서드가 있다면 해당 메서드는 네이티브 스택에 쌓임
