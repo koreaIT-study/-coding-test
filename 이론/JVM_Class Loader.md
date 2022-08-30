@@ -41,9 +41,7 @@ JVM은 RAM에 위치하며, 실행중에 클래스로더 서브시스템을 이�
     (loadClass 메서드)  ClassLoader 하위 시스템은 그 역할을 Application ClassLoader에게 넘긴다.  
     
     
-    AbstractClassLoader.class :: loadClass()  
-    
-    ![image](https://user-images.githubusercontent.com/67637716/187334068-f3a1f168-d496-46cd-a3f3-3bfd5ff266b3.png)  
+    ![image](https://user-images.githubusercontent.com/67637716/187352591-6a0ce71e-c475-492e-af85-8b67a0bfd4e1.png)  
 
 
 
