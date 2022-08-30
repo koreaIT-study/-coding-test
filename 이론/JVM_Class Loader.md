@@ -30,6 +30,10 @@ JVM은 RAM에 위치하며, 실행중에 클래스로더 서브시스템을 이�
 #### 로딩 과정
 ![image](https://user-images.githubusercontent.com/67637716/187333235-aa3b0246-68b8-42f7-ac8f-f2a32eb1c59c.png)  
 
+![image](https://user-images.githubusercontent.com/67637716/187358346-08bbc0f6-03ea-43ce-aa49-7c08f07f8460.png)  
+
+
+
 1. 우선 클래스가 메모리에 로드되었는지 확인 한다. (ClassLoader 클래스의 findLoadedClass() 메서드)
 ![image](https://user-images.githubusercontent.com/67637716/187333577-e35ed295-3bc8-4684-987e-1b0f417f48f1.png)  
 
