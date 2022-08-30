@@ -41,10 +41,6 @@ Rumtime Data Area는 다섯가지로 구분.
 4. Method Information  : 메서드의 모든 정보를 저장(Method명, 반환 타입, parameter수와 타입정보, 외 필요한 메서드에 대한 정보들)  
 5. Class Variable : static 키워드로 선언된 변수 저장(static 키워드로 선언된 변수 저장, 실제 인스턴스는 Heap에 저장됨)  
 
-#### Instance 생성시 일어나는 과정
-![image](https://user-images.githubusercontent.com/67637716/187241881-eee5b721-d928-4833-a663-7fef3205b897.png)  
-
-
 
  ## Heap Area
 인스턴스와 배열이 동적으로 생성되는 공간. Garbage Collection의 대상이 되는 영역.   
