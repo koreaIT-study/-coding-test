@@ -60,6 +60,11 @@ PermGen은 JDK 1.7 이하 버전에서 존재하였다.
 
 PermGen은 Permanent Generation의 약자다. (클래스의 정의들과 연관된 메타데이터를 위해 사용되는 메모리 공간)
 
+자바 내 메타데이터는 
+ * Class Meta Data
+ * Method Meta Data
+ * Static Object Variable
+
 이곳은 클래스 메타 데이터가 들어갈 곳인데, 이 공간의 크기는 예측하기가 어려웠다.
 
 자바에서는 클래스의 메타데이터를 읽고 해당 메타데이터를 통해 객체를 생성할 수 있다.
@@ -117,6 +122,8 @@ MaxHeapSize는 Native메모리의 1/4라고 했다.
 
 만약 총 실제 메모리: 4,004MB 4GB니 최대 1GB이다.
 
+영어가 된다면 밑에 사이트에서 보는 것도 좋음
+출처: https://dzone.com/articles/permgen-and-metaspace
 
 # 자바의 실행과정
 ![image](https://user-images.githubusercontent.com/82895809/190199224-7a34ac98-36af-43b0-8279-8b201082a1ad.png)
