@@ -111,8 +111,15 @@ Metaspace는 클래스 메타 데이터를 native메모리에 저장하고 부�
 
 Metaspace영역은 JVM에 의해 관리되는 Heap이 아닌 OS 레벨에서 관리되는 Native 메모리 영역이다.
 
-
 그러므로 Metaspace가 Native 메모리를 이용함으로서 개발자는 영역 확보의 상한을 크게 의식할 필요가 없어지게 되었다.
+
+Native Memory는
+ * Native Code로 시스템 콜을 호출
+ * 운영체제가 시스템 콜을 통해 메모리를 애플리케이션에 할당
+
+이 때 프로세스(자바)는 메모리 할당에 관여하지 않는 메모리로 자주 나오는 JNI(Java Native Interface)도 이 곳에 속한다.
+
+그리고 자바의 Direct-Buffer도 시스템 콜을 통해 운영체제에게서 직접적으로 메모리를 할당 받는다.
 
 ![image](https://user-images.githubusercontent.com/82895809/190197966-d111178b-c3e7-4aa9-8c1d-af2846ae7e4d.png)
 
