@@ -1,4 +1,6 @@
 ## 풀이시간 1시간 넘은듯, 풀이봄 근데 풀이방식은 같았음
+![image](https://user-images.githubusercontent.com/92290312/194991101-8edfe960-d951-4e28-9859-9ffdddfb3fca.png)
+
 ```java
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
